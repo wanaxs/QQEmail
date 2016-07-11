@@ -1,0 +1,806 @@
+@charset 'utf-8';
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 12px;
+	.clearfix{
+	zoom:1;
+	}
+	@lan:#1E5494;
+	.clearfix:after{
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	li{
+	list-style: none;
+	}
+	.weight{
+		font-weight: bold;
+	}
+	header{
+		min-width: 1348px;
+		max-width: 1366px;
+		overflow: hidden;
+		.logo{
+			float: left;
+			img{
+				margin-top: 20px;
+			}
+		}
+
+		.header-left{
+			float: left;
+
+			.user{
+				float: left;
+				margin-left: 20px;
+				padding-top: 14px;
+				.user-connect{
+						position: absolute;
+						left: 252px;
+						top: 30px;
+						width: 240px;
+						height: 170px;
+						display: none;
+						padding: 10px 10px;
+						border: 1px solid #A0A0A0;
+						background-color: #fff;
+						
+						.user-connect-1{
+							color:#7B7B7B; 
+							margin: 0px 0px 8px 0px;
+						}
+						hr{
+							border-top: none;
+							margin-top: 8px;
+							margin-bottom: 20px;
+						}
+						button{
+							background-color: #F9F9F9;
+							border: 1px solid #888888;
+							border-radius: 4px;
+							text-align: center;
+							padding: 0px 8px;
+							margin-top: 10px;
+						}
+						.user-connect-2{
+							color:#7B7B7B; 
+							line-height: 22px;
+						}
+					}
+				.user-name{
+					font-family: '微软雅黑';
+					margin-bottom: 5px;
+					width: 220px;
+					// position: relative;
+					a{
+						color: #000;
+					}
+				}
+				a{
+					text-decoration: none;
+					color: @lan;
+				}
+			}
+		}
+		.header-right{
+			float: right;
+			background-image: url(../images/top_bg.jpg);
+			width: 463px;
+			height: 66px;
+			text-align: right;
+			.smallphone{
+				display: inline-block;
+				background-image: url(../images/icon.png);
+				background-position: -120px 10px;
+				width: 20px;
+				background-repeat: no-repeat;
+				height: 24px;
+			}
+			a{
+				color: @lan;
+				text-decoration: none;
+			}
+			div{
+				position: relative;
+				input{
+					width: 270px;
+					height: 20px;
+					margin:12px 5px 0px 0px;
+					text-indent: 20px;
+					box-shadow: 1px 1px 1px  #ccc inset;
+				}
+				span{
+					background-image:  url(../images/smartsearch.png);
+					background-position: 0px 0px;
+					display: block;
+					width: 20px;
+					height: 30px;
+					position: absolute;
+					left: 184px;
+					top: 14px;
+				}
+				p{
+					background-image:  url(../images/smartsearch.png);
+					background-position: -30px 0px;
+					display: block;
+					width: 20px;
+					height: 30px;
+					position: absolute;
+					left: 444px;
+					top: 14px;
+				}
+			}
+		}
+	}
+	.main{
+		width: 1348px;
+		.col-md-3{
+			float: left;
+			// background-color: red;
+			.main-left-up{
+				.main-left-top{
+					background-image: url(../images/topline.gif);
+					background-repeat: no-repeat;
+					background-position: -180px 0px;
+					width: 190px;
+					height: 7px;
+					display: block;
+					// margin-top: 1px;
+				}
+				.main-left{
+					background-image: url(../images/nav_bg.gif);
+					background-repeat: no-repeat;
+					background-position: 4px 0px;
+					width: 184px;
+					height: 102px;
+					a{
+						width: 150px;
+						height: 20px;
+						margin-left: 20px;
+						padding: 4px 0;
+						line-height: 25px;
+						text-decoration: none;
+						color: @lan;
+						display: block;
+						text-indent: 10px;
+						font-weight: bold;
+						span{
+							background-image: url(../images/mail2757b6.png);
+							width: 20px;
+							height: 20px;
+							margin-right: 10px;
+							display: inline-block;
+							vertical-align: middle;
+						}
+						.write{
+							background-position: 0px 0px;
+						}
+						.receive{
+							background-position: 0px -32px;
+						}
+						.connect{
+							background-position: 0px -65px;
+						}
+					}
+					a:hover{
+							background-color: #E1EDF9;
+						}
+
+				}
+			}
+			.main-left-down{
+				width: 180px;
+				height: 420px;
+				position: relative;
+				margin-left: 4px;
+				background-image:url(../images/topline.gif);
+				background-position: 0px 0px;
+				.weight{
+					font-weight: bold;
+				}
+				.main-left-down-alist{
+					a{
+						display:inline-block;
+						text-decoration: none;
+						color: @lan;
+						width: 150px;
+						height: 22px;
+						line-height: 22px;
+						margin-left: 10px;
+						padding-left: 10px;
+						.start{
+							background-image:url(../images/mail2757b6.png);
+							background-position: -186px -175px;
+							margin-left: 1px;
+							width: 16px;
+							height: 14px;
+							display: inline-block;
+						}
+						.cup{
+							background-image:url(../images/mail2757b6.png);
+							background-position: -0px -190px;
+							margin-left: 5px;
+							width: 16px;
+							height: 14px;
+							display: inline-block;
+						}
+					}
+					a:hover{
+						background-color: #E1EDF9;
+					}
+					hr{
+						border-top: none;
+						color: #D8DEE5;
+						display: block;
+						border-color:  #D8DEE5;
+						margin: 0 auto;
+						margin-top: 5px;
+						margin-bottom: 4px;
+						width: 150px;
+
+					}
+					
+				}
+				.card{
+					margin-left: 20px;
+					width: 90px;
+					a{
+						text-decoration: none;
+						color: @lan;
+						float: left;
+						margin: 3px 2px;
+					}
+					a:hover{
+						background-color: #E0ECF9;
+					}
+				}
+				.text{
+					a{
+						display:inline-block;
+						text-decoration: none;
+						color: @lan;
+						width: 150px;
+						height: 22px;
+						line-height: 22px;
+						margin-left: 10px;
+						padding-left: 10px; 
+					}
+					a:hover{
+						background-color: #E0ECF9;
+					}
+				}
+				.main-left-bottom{
+					background-image: url(../images/topline.gif);
+					background-position: -190px -14px;
+					width: 173px;
+					height: 20px;
+					background-repeat: no-repeat;
+					display: block;
+					margin-top: 14px;
+					margin-left: 5px;
+				}
+			}
+		}
+		.col-md-9{
+			float: left;
+			// background-color: #ccc;
+			.main-right-top{
+				width: 1128px;
+				margin-top: -6px;
+
+				span{
+					background-image: url(../images/nav_bg.gif);
+					width: 1158px;
+					height: 6px;
+					margin-left: -4px;
+					margin-top: -19px;
+					display: inline-block;
+					background-position: 0px -114px;
+				}
+			}
+
+			.main-right-content{
+				a{
+					text-decoration: none;
+					color: @lan;
+				}
+				a:hover{
+					text-decoration: underline;
+				}
+				// 这是邮箱首页
+				.main-content-left{
+					width: 830px;
+					float: left;
+					.hello{
+						margin-top: 10px;
+						margin-bottom: 8px;
+						
+					}
+					.English{
+						color: #7986AA;
+					}
+					.mail{
+						margin-top: 8px;
+						.mail_pic{
+							width: 28px;
+							height: 13px;
+							display: inline-block;
+							background-position: -20px -33px;
+							background-image: url(../images/mail2757b6.png)
+						}
+					}
+					.mail-gd{
+						margin: 15px 0px 30px 28px;
+						a{
+							font-size: 14px;
+							display: inline-block;
+							margin-right: 10px;
+						}
+					}
+					.mail_tj{
+						border: 1px solid #A7C5E2;
+						margin-bottom: 30px;
+						h3{
+							background-color: #EFF5FB;
+							border-bottom: 1px solid #A7C5E2;
+							padding: 5px 0px;
+							font-weight: normal;
+						}
+						div{
+							width: 821px;
+							margin: 1px 4px;
+							background-color: #F7FCFF;
+						}
+						ul{
+							border-top: 1px solid #A7C5E2;
+							li{
+								float: left;
+								width: 340px;
+								height: 35px;
+								line-height: 35px;
+								margin: 0px 0px 0px 50px;
+								a{
+									font-size: 14px;
+								}
+								span{
+									width: 20px;
+									height: 20px;
+									margin-right: 5px;
+									line-height: 20px;
+									display: inline-block;
+									vertical-align: middle;
+									background-image: url(../images/newicon.png)
+								}
+								.icon1{
+									background-position:0px 0px;
+								}
+								.icon2{
+									background-position:0px -31px;
+								}
+								.icon3{
+									background-position:0px -63px;
+								}
+								.icon4{
+									background-position:0px -96px;
+								}
+								.icon5{
+									background-position:0px -125px;
+								}
+								.icon6{
+									background-position:0px -158px;
+								}
+							}
+						}
+					}
+					.banquan{
+						.join{
+							color: @lan;
+							margin-top: 10px;
+							a{
+								color: @lan;
+
+							}
+						}
+						.banben{
+							color: #798699;
+						}
+					}
+				}
+				.main-content-right{
+					float: left;
+					width: 310px;
+					margin-left: 5px;
+					.jlzx{
+						margin-top: 60px;
+						margin-bottom: 20px;
+						background-color: #E0ECF9;
+						padding: 5px 13px 8px 10px;
+						p{
+							margin-top: 5px;
+							span{
+								color: #798699;
+								line-height: 20px;
+							}
+							a{
+								text-decoration: underline;
+							}
+						}
+					}
+					.tips{
+						width: 310px;
+						padding: 10px 5px;
+						padding-bottom: 0px;
+						background-color: #EFF5FB;
+						border: 1px solid #A7C5E2;
+						.birth{
+							width: 150px;
+							display: inline-block;
+							height: 30px;
+							line-height: 30px;
+							text-align: center;
+							background-color: #fff;
+							border: 1px solid #A7C5E2;
+							border-bottom: transparent;
+							border-radius: 5px;
+							border-bottom-left-radius: 0px;
+							border-bottom-right-radius: 0px;
+
+						}
+						.message{
+							width: 152px;
+							border: 1px solid #A7C5E2;
+							border-left: none;
+							margin-left: -3px;
+							text-align: center;
+							display: inline-block;
+							height: 30px;
+							line-height: 30px;
+							background-color: #EFF5FB;
+							border-radius: 0px;
+							border-top-right-radius: 8px;
+						}
+						.birthday{
+							background-color: #fff;
+							.one{
+								margin-left: 10px;
+								padding-top: 10px;
+								img,p{
+									float: left;
+								}
+								p{
+									margin-left: 10px;
+									span{
+										display: block;
+										margin-bottom: 3px;
+									}
+									.name{
+										color: #5FA207;
+										line-height: 18px;
+										margin-bottom: 3px;
+									}
+									a{
+										margin-right: 10px;
+									}
+								}
+							}
+							hr{
+								border-top: none;
+								width: 280px;
+								margin: 0 auto;
+								margin-top: 30px;
+								border:1px solid  #DDE2E8;
+							}
+							.all{
+								display: block;
+								// margin: 0 auto;
+								width: 310px;
+								text-align: center;
+								padding: 10px 0px;
+							}
+						}
+					}
+				}
+				// 这是写信页面
+				.xx{
+					
+					width: 1155px;
+					.xx-1{
+						margin-top: 6px;
+						li{
+							float: left;
+							width: 110px;
+							height: 30px;
+							line-height: 30px;
+							border-top-left-radius: 5px;
+							border-top-right-radius: 5px;
+							background-color: #E0ECF9;
+							text-align: center;
+							font-size: 14px;
+							font-weight: bold;
+							margin-right: 3px;
+							
+						}
+						#xx-active{
+							background-color: #C1D9F3;
+						}
+					}
+					.xx-2{
+						background-color: #C1D9F3;
+						width: 100%;
+						padding-bottom: 8px;
+						.xx-2-send{
+							padding-top: 5px;
+							float: left;
+							button{
+								height: 26px;
+								padding: 3px 9px;
+								background-color: #F1F1F1;
+								border:1px solid #888888;
+								font-size: 12px;
+								border-radius: 5px;
+							} 
+						}
+						.xx-2-see{
+							float: right;
+							a{
+								margin-top: 10px;
+								display: inline-block;
+								margin-right: 8px;
+							}
+						}
+						
+					}
+					.main-xx{
+						width: 100%;
+						.main-xx-left{
+							width: 920px;
+							padding-left: 30px;
+							float: left;
+							background-color: #EFF5FB;
+							.input1{
+								width: 860px;
+								height: 22px;
+							}
+							.send{
+								padding: 5px 0px 15px 0px;
+								width: 860px;
+								color: #1E5494;
+							}
+							.add{
+								color: #1E5494;
+								padding-top: 5px;
+								span{
+									background-image: url(../images/compose.png);
+									width: 16px;
+									height: 20px;
+									display: inline-block;
+									vertical-align: middle;
+								}
+								.add1{
+									background-position: 0px 0px;
+								}
+								.add2{
+									background-position: -1px -478px;
+								}
+								.add3{
+									background-position: -1px -24px;
+								}
+								.add4{
+									background-position: -1px -72px;
+								}
+								.add6{
+									background-image: url(../images/compose2.png);
+									background-position: 0px -623px;
+								}
+								.add7{
+									background-position: 0px -287px;
+								}
+								.add8{
+									background-position: 0px -95px;
+								}
+								.add9{
+									background-image: url(../images/compose2.png);
+									background-position: 0px -667px;
+								}
+								.add10{
+									background-position: 0px -167px;
+								}
+								.add5{
+									background-image: url(../images/compose2.png);
+									background-position: 0px -646px;
+									width: 10px;
+								}
+							}
+							.input2{
+								width: 860px;
+								height: 262px;
+								margin-bottom: 10px;
+							}
+							.xx-qqmail{
+								text-decoration: none;
+								position: relative;
+								.xx-name{
+								font-weight: bold;
+								color: #000;
+								font-size: 13px;
+								}
+								.xx-mail{
+									color: #000;
+								}
+								.xx-qqmail-more{
+									color: #798699;
+									font-size: 10px;
+									display: inline-block;
+								}
+								.qqmail-more{
+									position: absolute;
+									border: 1px solid #A7A7A7;
+									width: 210px;
+									height: 60px;
+									background-color: #fff;
+									top: -64px;
+									left: 0px;
+									display: none;
+									border-radius: 4px;
+
+									hr{
+										width: 190px;
+										border-top: none;
+										margin: 0 auto;
+									}
+									.qqnum{
+										color: #fff;
+										width: 210px;
+										margin:6px 0px 4px 0px;
+										text-indent: 10px;
+										background-color: #3470CC;
+									}
+									.qqname{
+										padding: 8px 0px;
+										margin: 0 auto;
+										width: 150px;
+										.qq-name{
+											color: #000;
+										}
+										.qq-name2{
+											color: #7B7B7B;
+										}
+										.qq-name3{
+											color: #1E5494;
+										}
+										.qq-name3:hover{
+											text-decoration: underline;
+										}
+									}
+
+								}
+								.xx-qqmail-more:hover+.qqmail-more{
+									display: block;
+								}
+							}
+							.xx-other{
+									color: #000;
+									display: inline-block;
+									margin-left: 15px;
+								}
+							
+							.xx-qqmail:hover{
+								text-decoration: none;
+							}
+							
+							.zhengwen{
+								vertical-align: top;
+							}
+						}
+						.main-xx-right{
+							width: 195px;
+							height: 408px;
+							float: left;
+							padding-right: 10px;
+							background-color: #EFF5FB;
+							.xx-righ-list{
+								border: 1px solid #7F9DB9;
+								background-color: #fff;
+								.list-top{
+									a{
+										width: 95px;
+										height: 25px;
+										text-align: center;
+										line-height: 25px;
+										display: inline-block;
+										background-color: #fff;
+									}
+									#list-txl{
+										font-weight: bold;
+										width: 94.5px;
+										margin-left: -2px;
+										background-color: #E7F0F8;
+										border-left: 1px solid #7F9DB9;
+									}
+								}
+								.list-search{
+									
+									input{
+										width: 175px;
+										margin: 5px 7px;
+										height: 22px;
+										text-indent: 5px;
+										border: 1px solid #7C7C7C;
+									}
+								}
+								.list-people{
+									background-color: #EFF5FB;
+									padding: 5px 10px;
+									border-top: 1px solid #CCCCCC;
+									border-bottom: 1px solid #D3E1F0;
+									a{
+										margin-left: 85px;
+										display: inline-block;
+									}
+								}
+								.people-list{
+									padding: 10px 0px;
+									li{
+										
+										width: 130px;
+										height: 22px;
+										line-height: 22px;
+										a{
+											color: #6B496B;
+											width: 100%;
+											padding: 0px 30px;
+											display: inline-block;
+										}
+										a:hover{
+											background-color: #FFEEC2;
+											text-decoration: none;
+										}
+									}
+
+								}
+								.qqfriends{
+									display: block;
+									background-color: #EFF5FB;
+									padding: 5px 10px;
+									width: 172px;
+									border-bottom: 1px solid #D3E1F0;
+								}
+								.qqfriends-list{
+									padding-bottom: 2px;
+									p{
+										font-weight: bold;
+										padding: 3px 20px;
+										width: 160px;
+									}
+								}
+							}
+						}
+					}
+					.xx-footer{
+						width: 99%;
+						background-color: #C1D9F3;
+						padding: 5px 0px;
+						padding-left: 10px;
+
+						button{
+							height: 26px;
+							padding: 3px 9px;
+							background-color: #F1F1F1;
+							border:1px solid #888888;
+							font-size: 12px;
+							border-radius: 5px;
+						} 
+					}
+				}
+			}
+		}
+	}
+
+}
+
+

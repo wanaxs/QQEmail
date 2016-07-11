@@ -1,0 +1,14 @@
+$(function(){
+	$('.ask').click(function(){
+		$('.user-connect').css({'display':'block'});
+	});
+	$('.ask').mouseout(function(){
+		$('.user-connect').css({'display':'none'});
+	});
+	$('.user-connect').mouseover(function(){
+		$('.user-connect').css({'display':'block'});
+	});
+	$('.user-connect').mouseout(function(){
+		$('.user-connect').css({'display':'none'});
+	});
+})

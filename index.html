@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+	<title>qq邮箱</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/mail.css">
+	<script src="libs/angular.min.js"></script>
+	<script src="module/app.js"></script>
+	<script type="text/javascript" src="libs/angular-ui-router.min.js"></script>
+</head>
+<body>
+	<header class="clearfix">
+		<div class="header-left clearfix">
+			<div class="logo">
+				<img src="images/logo.png">
+			</div>
+			<div class="user">
+				<p class="user-name">	刘筱菲
+					<a href=""><1227681877@qq.com></a>
+					<a  class="ask" href="" style="color: #8D8D8D;">▼</a>
+					<div class="user-connect">
+						<p class="user-connect-1">您的当前邮箱账号：</p>
+						<p class="weight">1227681877@qq.com</p>
+						<hr/>
+						<p class="user-connect-2">拥有备用邮箱，来适用于不同用途。<br/>
+						它们可以关联在一起，<br/>
+						方便随意切换不同的邮箱。</p>
+						<button>申请备用邮箱</button>
+						<button>关联已有邮箱</button>
+					</div>
+				</p>
+				<p>
+					<a ui-sref='sy'>邮箱首页</a>|
+					<a href="">设置 </a>-
+					<a href="">换肤</a>
+				</p>
+			</div>
+		</div>
+		<div class="header-right">
+			<span class="smallphone"></span>|
+			<a href="">反馈建议</a>|
+			<a href="">帮助中心</a>|
+			<a href="">退出</a><br/>
+			<div>
+				<input type="text" placeholder="邮件全文搜索">
+				<span></span>
+				<p></p>
+			</div>
+		</div>
+	</header>
+	<div class="main row clearfix">
+		<div class="col-md-3">
+			<div class="main-left-up">
+				<span class="main-left-top"></span>
+				<div class="main-left">
+					<a ui-sref='xx'><span class="write"></span>写信</a>
+					<a ui-sref="sx"><span class="receive"></span>收信</a>
+					<a ui-sref="txl"><span class="connect"></span>通讯录</a>
+				</div>
+			</div>
+			<div class="main-left-down">
+				<div class="main-left-down-alist">
+					<a href="" class="weight">收件箱(4)</a>
+					<a href="">星标邮件<span class="start"></span></a>
+					<a href="">群邮件</a>
+					<a href="">草稿箱(1)</a>
+					<a href="">已发送</a>
+					<a href="" class="weight">
+						已删除(2)
+					</a>
+					<a href="" class="weight">
+						垃圾箱(2)
+					</a>
+					<a href="">QQ邮件订阅</a>
+					<hr/>
+					<a href="" class="weight">我的文件夹(5)</a>
+					<a href="">其他邮箱</a>
+					<hr/>
+					<a href="">漂流瓶<span class="cup"></span></a>
+				</div>
+				<div class="card clearfix">
+					<a href="">贺卡&nbsp;</a>
+					<a href="">|</a>
+					<a href="">&nbsp;明信片</a>
+					<a href="">日历&nbsp;</a>
+					<a href="">|</a>
+					<a href="">&nbsp;记事本</a>
+				</div>
+				<div class="text">
+					<a href="">附件收藏</a>
+					<a href="">文件中转站</a>
+					<a href="">简历</a>
+					<a href="">阅读空间</a>
+				</div>
+				<span class="main-left-bottom"></span>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="main-right-top">
+				<span></span>
+			</div>
+			<div ui-view class="main-right-content">
+			</div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="libs/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="module/mail.js"></script>
+</body>
+</html>
